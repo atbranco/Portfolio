@@ -1,8 +1,10 @@
 :root {
-  --branding-color: #6c63ff;
+  --branding-color: #ff487e;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Poppins", sans-serif;
-  --secondary-color: #f9f7fe;
+  --secondary-color: #ffd5be;
+  --tertiary-color: #ffedff;
+  --quaternary-color: #ff9776;
 }
 
 body {
@@ -33,6 +35,9 @@ p {
   font-size: 16px;
   line-height: 30px;
 }
+.logo {
+  max-height: 60px;
+}
 .hero {
   background: var(--secondary-color);
   text-align: center;
@@ -52,6 +57,14 @@ p {
 }
 .content-container {
   padding: 60px 20px;
+}
+.content-container a:hover {
+  color: var(--branding-color);
+  text-decoration: none;
+}
+.content-container a {
+  color: black;
+  text-decoration: none;
 }
 .content h1 {
   font-size: 64px;
@@ -92,20 +105,24 @@ p {
 .project-description {
   padding: 120px 60px;
 }
-.logo {
-  max-height: 40px;
+.icon {
+  color: var(--branding-color);
 }
 nav {
-  padding: 20px 0;
+  padding: 20px 10px;
+  background: var(--tertiary-color);
+  margin: 0;
+  border-radius: 10px;
+  line-height: 2;
 }
 nav ul {
   padding: 0;
   margin: 0;
 }
 nav li {
-  display: inline;
+  display: inline-flex;
   list-style: none;
-  line-height: 42px;
+  line-height: 60px;
   margin-left: 15px;
 }
 
@@ -149,7 +166,7 @@ footer .social-links a {
   transition: all 100ms ease-in-out;
 }
 footer .social-links a:hover {
-  color: white;
+  color: var(--tertiary-color);
   background: var(--branding-color);
 }
 @media (max-width: 900px) {
