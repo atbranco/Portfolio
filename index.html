@@ -32,10 +32,11 @@
       crossorigin="anonymous"
     ></script>
   </head>
+
   <body>
     <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/" title="Homepage">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
           <img
             src="/images/Ana-logo-color.png"
             class="logo d-none d-md-block"
@@ -45,151 +46,176 @@
             class="logo d-block d-md-none"
             alt="small-logo-Ana"
         /></a>
-        <ul>
-          <li class="active">
-            <a href="/" title="Homepage">Home</a>
-          </li>
-          <li>
-            <a href="/about.html" title="About Ana">About</a>
-          </li>
-          <li>
-            <a href="/work.html" title="Ana's Work">Work</a>
-          </li>
-          <li>
-            <a href="/contact.html" title="Contact Ana">Contacts</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
-
-    <div class="hero">
-      <p>👋 Hello I am</p>
-      <h1>Ana Teresa Branco</h1>
-      <h2 class="mb-5">Frontend Developer, based in Portugal.</h2>
-      <div>
-        <a href="/contact.html" class="btn btn-branding" title="Contact me"
-          >Contact me</a
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
-      </div>
-    </div>
-    <p class="text-center m-5">
-      Featured Project which my best projects be choice to show
-    </p>
-    <div class="container">
-      <div class="row mb-5 align-items-center">
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/Normal Person.jpg"
-            alt="How to be a Normal Person project preview"
-            class="img-fluid"
-          />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">How to be a Normal Person Project</h2>
-            <p class="mb-5 text-muted">
-              “But that's really it. I'm Gus. I work in a video store that no
-              one really goes to. I own some buildings. I have a pet ferret. I
-              read an inspirational message off a calendar every morning even
-              though I don't want to. My friends are all two times my age or
-              more. I read encyclopedias. I miss my dad. And I think I might
-              worship the ground Casey walks on. That's it. That's who I am.” in
-              How to be a Normal Person by Tj Klune
-            </p>
-            <a href="/work.html" class="btn btn-branding-outline">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5 align-items-center">
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
-              Check out the weather where you are or any city that you're
-              interested in.
-            </p>
-            <a href="/work.html" class="btn btn-branding-outline">Learn more</a>
-          </div>
-        </div>
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/weather-app.jpg"
-            alt="Weather app preview"
-            class="img-fluid"
-          />
-        </div>
-      </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-      <div class="row align-items-center">
-        <div class="col d-none d-lg-block">
-          <img
-            src="/images/World Clock.jpg"
-            alt="World Clock app preview"
-            class="img-fluid"
-          />
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="/index.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tools.html">My work tools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/work.html">My work</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact me</a>
+            </li>
+          </ul>
         </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">World Clock App</h2>
-            <p class="mb-5 text-muted">Check out the time in several cities.</p>
-            <a href="/work.html" class="btn btn-branding-outline">Learn more</a>
-          </div>
-        </div>
-      </div>
-      <footer>
-        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
-          <div>
-            <h3>Work Inquiry</h3>
-            <p class="text-muted">
-              Let's work together and i'll help you by all my best
-            </p>
-          </div>
-          <div>
-            <a
-              href="/contact.html"
-              class="btn btn-branding mt-3"
-              title="Contact Ana
-            "
-              >Contact me</a
-            >
-          </div>
-        </div>
+      </nav>
 
-        <div class="d-flex justify-content-center mb-5">
-          <a
-            href="mailto:anateresabranco@gmail.com"
-            class="email-link"
-            title="email Ana"
-            >anateresabranco@gmail.com
-          </a>
-        </div>
-        <div class="social-links d-flex justify-content-center">
-          <a
-            href="http//www.github.com/atbranco"
-            target="_blank"
-            title="GitHub Profile"
-            ><i class="fa-brands fa-github"></i
-          ></a>
-          <a
-            href="https://www.linkedin.com/in/ana-teresa-branco-bb397b83/"
-            target="_blank"
-            title="LinkedIn Profile"
-            ><i class="fa-brands fa-linkedin-in"></i
-          ></a>
-          <a
-            href="http//www.twitter.com/anatbranco"
-            target="_blank"
-            title="Twitter Profile"
-            ><i class="fa-brands fa-twitter"></i
-          ></a>
-        </div>
-        <p class="text-center mt-5">
-          ✌ This project was coded by Ana and is
-          <a href="https://github.com/atbranco/Portfolio" target="_blank"
-            >open-sourced</a
+      <div class="hero">
+        <p>👋 Hello I am</p>
+        <h1>Ana Teresa Branco</h1>
+        <h2 class="mb-5">Frontend Developer, based in Portugal.</h2>
+        <div>
+          <a href="/contact.html" class="btn btn-branding" title="Contact me"
+            >Contact me</a
           >
-        </p>
-      </footer>
+        </div>
+      </div>
+      <p class="text-center m-5">
+        Featured Project which my best projects be choice to show
+      </p>
+      <div class="container">
+        <div class="row mb-5 align-items-center">
+          <div class="col d-none d-lg-block">
+            <img
+              src="/images/dictionary.jpg"
+              alt="How to be a Normal Person project preview"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">Dictionary app</h2>
+              <p class="mb-5 text-muted">
+                Check out any word you don't know the meaning. Or maybe you know
+                what it means but not how to pronounce or you would like to see
+                some picture, you can have it all in this Dictionary app.
+              </p>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="row mb-5 align-items-center">
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">Weather App</h2>
+              <p class="mb-5 text-muted">
+                Check out the weather where you are or any city that you're
+                interested in.
+              </p>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
+            </div>
+          </div>
+          <div class="col d-none d-lg-block">
+            <img
+              src="/images/weather-app.jpg"
+              alt="Weather app preview"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+
+        <div class="row align-items-center">
+          <div class="col d-none d-lg-block">
+            <img
+              src="/images/World Clock.jpg"
+              alt="World Clock app preview"
+              class="img-fluid"
+            />
+          </div>
+          <div class="col">
+            <div class="project-description">
+              <h2 class="mb-5">World Clock App</h2>
+              <p class="mb-5 text-muted">
+                Check out the time in several cities.
+              </p>
+              <a href="/work.html" class="btn btn-branding-outline"
+                >Learn more</a
+              >
+            </div>
+          </div>
+        </div>
+        <footer>
+          <div
+            class="contact-box justify-content-between mb-5 d-none d-md-flex"
+          >
+            <div>
+              <h3>Work Inquiry</h3>
+              <p class="text-muted">
+                Let's work together and i'll help you by all my best
+              </p>
+            </div>
+            <div>
+              <a
+                href="/contact.html"
+                class="btn btn-branding mt-3"
+                title="Contact Ana
+            "
+                >Contact me</a
+              >
+            </div>
+          </div>
+
+          <div class="d-flex justify-content-center mb-5">
+            <a
+              href="mailto:anateresabranco@gmail.com"
+              class="email-link"
+              title="email Ana"
+              >anateresabranco@gmail.com
+            </a>
+          </div>
+          <div class="social-links d-flex justify-content-center">
+            <a
+              href="http//www.github.com/atbranco"
+              target="_blank"
+              title="GitHub Profile"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/ana-teresa-branco-bb397b83/"
+              target="_blank"
+              title="LinkedIn Profile"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+            <a
+              href="http//www.twitter.com/anatbranco"
+              target="_blank"
+              title="Twitter Profile"
+              ><i class="fa-brands fa-twitter"></i
+            ></a>
+          </div>
+          <p class="text-center mt-5">
+            ✌ This project was coded by Ana and is open-sourced on
+            <a href="https://github.com/atbranco/Portfolio" target="_blank"
+              >GitHub</a
+            >
+          </p>
+        </footer>
+      </div>
     </div>
   </body>
 </html>

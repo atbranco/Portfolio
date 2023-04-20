@@ -34,8 +34,8 @@
   </head>
   <body>
     <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/" title="Homepage">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="/index.html">
           <img
             src="/images/Ana-logo-color.png"
             class="logo d-none d-md-block"
@@ -45,38 +45,59 @@
             class="logo d-block d-md-none"
             alt="small-logo-Ana"
         /></a>
-        <ul>
-          <li>
-            <a href="/" title="Homepage">Home</a>
-          </li>
-          <li>
-            <a href="/about.html" title="About Patricia">About</a>
-          </li>
-          <li class="active">
-            <a href="/work.html" title="Patricia's Work">Work</a>
-          </li>
-          <li>
-            <a href="/contact.html" title="Contact Patricia">Contacts</a>
-          </li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/index.html">Home </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/about.html">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/tools.html">My work tools</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/work.html"
+                >My work<span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/contact.html">Contact me</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </div>
 
     <div class="content-container container">
       <div class="content">
         <h1 class="mb-5">Take a look at what I've been working on!</h1>
-        <div class="row align-items-top">
+        <div class="row align-items-center">
           <div class="col-md-6 mb-4">
             <img
               src="/images/Normal Person.jpg"
               class="img-fluid mb-3 ml-5 rounded"
               alt="How to be a Normal Person project preview"
             />
+          </div>
+          <div class="col-md-6 mb-4">
             <h3 class="text-center m-0">
               <a
                 href="https://github.com/atbranco/SheCodesBasics_FinalProject"
                 target="_blank"
-                title="How to be a Normal Person Project link"
+                title="How to be a Normal Person Project link to GitHub"
               >
                 How to be a Normal Person Project</a
               >
@@ -84,61 +105,150 @@
             <p class="text-center text-muted">
               Built with HTML, CSS and Java Script
             </p>
+            <div class="work-project-description">
+              This was my firt ever programing project. It was the final project
+              for the workshop SheCodes Basic where I learned the basics of
+              HTML, CSS and JavaScript. The theme was a book from one of my all
+              time favourite author TJ Klune titled "How to be a Normal Person"
+            </div>
           </div>
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+              <h3 class="text-center m-0">
+                <a
+                  href="https://github.com/atbranco/SheCodesBasics_Add-On_FinalProject"
+                  target="_blank"
+                  title="Books Project link to GitHub"
+                  >Books Project</a
+                >
+              </h3>
+              <p class="text-center text-muted">
+                Built with HTM, CSS and Java Script
+              </p>
+              <div class="work-project-description">
+                This was my second programing project. It was the final project
+                for the workshop SheCodes Basic Add-On. The objective was to
+                create a landing page about somethingwe were passionate about so
+                I naturally chose books.
+              </div>
+            </div>
+            <div class="col-md-6 mb-4">
+              <img
+                src="/images/Books project.jpg"
+                class="img-fluid mb-3 rounded"
+                alt="Books project preview"
+              />
+            </div>
+          </div>
+
+          <div class="row align-items-center">
+            <div class="col-md-6 mb-4">
+              <img
+                src="/images/World Clock.jpg"
+                class="img-fluid mb-3 ml-5 rounded"
+                alt="World Clock app preview"
+              />
+            </div>
+            <div class="col-md-6 mb-4">
+              <h3 class="text-center m-0">
+                <a
+                  href="https://world-clock-atb.netlify.app/"
+                  target="_blank"
+                  title="World Clock link"
+                  >World Clock</a
+                >
+              </h3>
+              <p class="text-center text-muted">
+                Built with HTML, CSS and JavaScript
+              </p>
+              <div class="work-project-description">
+                This app was coded during the SheCodes Plus Add-on workshop and
+                alows you to check the time in selected cities in the world.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row align-items-center">
           <div class="col-md-6 mb-4">
-            <img
-              src="/images/Books project.jpg"
-              class="img-fluid mb-3 rounded"
-              alt="Books project preview"
-            />
             <h3 class="text-center m-0">
               <a
-                href="https://github.com/atbranco/SheCodesBasics_Add-On_FinalProject"
+                href="https://azores-travel-project.netlify.app/"
                 target="_blank"
-                title="Books Project link"
-                >Books Project</a
+                title="Travel to Azores app link"
+                >Travel to Azores app</a
               >
             </h3>
             <p class="text-center text-muted">
-              Built with HTM, CSS and Java Script
+              Built with HTML, CSS and JavaScript
             </p>
+            <div class="work-project-description">
+              This app was coded during the SheCodes Responsive Add-on workshop.
+              It is about the Azores, where I grew up and you can check
+              restaurant recomendations with integrated maps and also
+              inspirational pictures from Instagram.
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="/images/azores.jpg"
+              class="img-fluid mb-3 ml-5 rounded"
+              alt="Travel to Azores app preview"
+            />
           </div>
         </div>
-        <div class="row align-items-end">
+
+        <div class="row align-items-center">
           <div class="col-md-6 mb-4">
             <img
               src="/images/weather-app.jpg"
               class="img-fluid mb-3 ml-5 rounded"
               alt="Weather app preview"
             />
+          </div>
+          <div class="col-md-6 mb-4">
             <h3 class="text-center m-0">
               <a
-                href="https://rococo-piroshki-d6a795.netlify.app/"
+                href="https://weather-app-atb.netlify.app/"
                 target="_blank"
                 title="Weather app link"
                 >Weather App</a
               >
             </h3>
-            <p class="text-center text-muted">
-              Built with HTML, CSS and Java Script
-            </p>
+            <p class="text-center text-muted">Built with HTML, CSS and React</p>
+            <div class="work-project-description">
+              This app was coded during the SheCodes React workshop. With this
+              app you can check the weather in any city in the world (all units
+              are according to the metric system).
+            </div>
           </div>
+        </div>
+        <div class="row align-items-center">
           <div class="col-md-6 mb-4">
-            <img
-              src="/images/World Clock.jpg"
-              class="img-fluid mb-3 rounded"
-              alt="World Clock app preview"
-            />
             <h3 class="text-center m-0">
               <a
-                href="https://extraordinary-valkyrie-ea880b.netlify.app/"
+                href="https://dictionary-app-atb.netlify.app/"
                 target="_blank"
-                title="World Clock link"
+                title="Dictionary app link"
               >
-                World Clock App</a
+                Dictionary App</a
               >
             </h3>
             <p class="text-center text-muted">Built with HTML, CSS and React</p>
+            <div class="work-project-description">
+              This app was coded during the SheCodes React Add-on workshop. With
+              this app you can check out any word you don't know the meaning. Or
+              maybe you know what it means but not how to pronounce or you would
+              like to see some picture, you can have it all in this Dictionary
+              app.
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <img
+              src="/images/dictionary.jpg"
+              class="img-fluid mb-3 rounded"
+              alt="World Clock app preview"
+            />
           </div>
         </div>
       </div>
@@ -190,9 +300,9 @@
           ></a>
         </div>
         <p class="text-center mt-5">
-          ✌ This project was coded by Ana and is
+          ✌ This project was coded by Ana and is open-sourced on
           <a href="https://github.com/atbranco/Portfolio" target="_blank"
-            >open-sourced</a
+            >GitHub</a
           >
         </p>
       </footer>
